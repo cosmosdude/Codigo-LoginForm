@@ -252,7 +252,7 @@
                                                                                                     <constraint firstAttribute="width" constant="45" id="en3-a3-Ahu"/>
                                                                                                 </constraints>
                                                                                                 <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="20"/>
-                                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                                <textInputTraits key="textInputTraits" textContentType="tel"/>
                                                                                             </textField>
                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MD-co-RL8">
                                                                                                 <rect key="frame" x="55" y="0.0" width="1" height="40"/>
@@ -276,7 +276,7 @@
                                                                                                     <constraint firstAttribute="height" constant="40" id="g5L-5w-FgX"/>
                                                                                                 </constraints>
                                                                                                 <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="20"/>
-                                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                                <textInputTraits key="textInputTraits" textContentType="tel"/>
                                                                                             </textField>
                                                                                         </subviews>
                                                                                     </stackView>

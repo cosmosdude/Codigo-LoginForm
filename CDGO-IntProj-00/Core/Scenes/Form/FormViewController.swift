@@ -20,10 +20,8 @@ extension FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        outlets.inputFields.forEach {
-            $0.textField.delegate = self
-        }
+
+        configureTextFields()
         
         outlets.countryCodeField.delegate = self
         outlets.phoneNumberField.delegate = self
@@ -32,6 +30,19 @@ extension FormViewController {
         formatter.dateFormat = "dd/MM/yyyy"
         
         outlets.dobSelector.maximumDate = Date()
+    }
+    
+    private func configureTextFields() {
+        outlets.inputFields.forEach {
+            $0.textField.delegate = self
+        }
+        configureNameField(outlets.firstnameField.textField)
+        configureNameField(outlets.lastnameField.textField)
+        outlets.emailField.textField.keyboardType = .emailAddress
+    }
+    
+    private func configureNameField(_ textField: UITextField) {
+        textField.autocapitalizationType = .words
     }
     
     override func viewDidAppear(_ animated: Bool) {
