@@ -32,6 +32,12 @@
 		7DBC908A28388B8700CD05B8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908928388B8700CD05B8 /* FormViewController.swift */; };
 		7DBC908C28388BAC00CD05B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908B28388BAC00CD05B8 /* main.swift */; };
 		7DBC909028388F5900CD05B8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908F28388F5900CD05B8 /* GradientView.swift */; };
+		7DBC90932838994F00CD05B8 /* UIView+UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC90922838994F00CD05B8 /* UIView+UINib.swift */; };
+		7DBC909628389B7600CD05B8 /* FormViewController+IBOutlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC909528389B7600CD05B8 /* FormViewController+IBOutlets.swift */; };
+		7DBC909828389C1D00CD05B8 /* FormTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC909728389C1D00CD05B8 /* FormTextView.swift */; };
+		7DBC909A28389C3100CD05B8 /* FormTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC909928389C3100CD05B8 /* FormTextView.xib */; };
+		7DBC909D2838ABCD00CD05B8 /* GenderSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC909C2838ABCD00CD05B8 /* GenderSwitchView.swift */; };
+		7DBC909F2838ABD800CD05B8 /* GenderSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC909E2838ABD800CD05B8 /* GenderSwitchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		7DBC908928388B8700CD05B8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		7DBC908B28388BAC00CD05B8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7DBC908F28388F5900CD05B8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		7DBC90922838994F00CD05B8 /* UIView+UINib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UINib.swift"; sourceTree = "<group>"; };
+		7DBC909528389B7600CD05B8 /* FormViewController+IBOutlets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormViewController+IBOutlets.swift"; sourceTree = "<group>"; };
+		7DBC909728389C1D00CD05B8 /* FormTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextView.swift; sourceTree = "<group>"; };
+		7DBC909928389C3100CD05B8 /* FormTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextView.xib; sourceTree = "<group>"; };
+		7DBC909C2838ABCD00CD05B8 /* GenderSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSwitchView.swift; sourceTree = "<group>"; };
+		7DBC909E2838ABD800CD05B8 /* GenderSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderSwitchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +145,7 @@
 		7D4A8BFF283885D300204D2F /* CDGO-IntProj-00 */ = {
 			isa = PBXGroup;
 			children = (
+				7DBC90912838994100CD05B8 /* Utilities */,
 				7DBC908B28388BAC00CD05B8 /* main.swift */,
 				7D4A8C332838869E00204D2F /* Support */,
 				7D4A8C312838869500204D2F /* Core */,
@@ -279,6 +292,7 @@
 			children = (
 				7DBC908728388B7A00CD05B8 /* Form.storyboard */,
 				7DBC908928388B8700CD05B8 /* FormViewController.swift */,
+				7DBC909528389B7600CD05B8 /* FormViewController+IBOutlets.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -286,6 +300,8 @@
 		7DBC908D28388F3F00CD05B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7DBC909B2838ABB300CD05B8 /* GenderSwitchView */,
+				7DBC90942838996D00CD05B8 /* FormTextView */,
 				7DBC908E28388F4300CD05B8 /* GradientView */,
 			);
 			path = Views;
@@ -297,6 +313,32 @@
 				7DBC908F28388F5900CD05B8 /* GradientView.swift */,
 			);
 			path = GradientView;
+			sourceTree = "<group>";
+		};
+		7DBC90912838994100CD05B8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC90922838994F00CD05B8 /* UIView+UINib.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7DBC90942838996D00CD05B8 /* FormTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC909728389C1D00CD05B8 /* FormTextView.swift */,
+				7DBC909928389C3100CD05B8 /* FormTextView.xib */,
+			);
+			path = FormTextView;
+			sourceTree = "<group>";
+		};
+		7DBC909B2838ABB300CD05B8 /* GenderSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC909C2838ABCD00CD05B8 /* GenderSwitchView.swift */,
+				7DBC909E2838ABD800CD05B8 /* GenderSwitchView.xib */,
+			);
+			path = GenderSwitchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,10 +449,12 @@
 				7DBC907A28388B1E00CD05B8 /* Chivo-LightItalic.ttf in Resources */,
 				7DBC907D28388B1E00CD05B8 /* Chivo-BoldItalic.ttf in Resources */,
 				7DBC907F28388B1E00CD05B8 /* Chivo-BlackItalic.ttf in Resources */,
+				7DBC909F2838ABD800CD05B8 /* GenderSwitchView.xib in Resources */,
 				7DBC908628388B7100CD05B8 /* Welcome.storyboard in Resources */,
 				7DBC907B28388B1E00CD05B8 /* Chivo-Bold.ttf in Resources */,
 				7DBC908828388B7A00CD05B8 /* Form.storyboard in Resources */,
 				7DBC907C28388B1E00CD05B8 /* Chivo-Italic.ttf in Resources */,
+				7DBC909A28389C3100CD05B8 /* FormTextView.xib in Resources */,
 				7D4A8C0D283885D700204D2F /* LaunchScreen.storyboard in Resources */,
 				7D4A8C3D283886FF00204D2F /* Images.xcassets in Resources */,
 				7DBC907E28388B1E00CD05B8 /* Chivo-Light.ttf in Resources */,
@@ -442,12 +486,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBC909628389B7600CD05B8 /* FormViewController+IBOutlets.swift in Sources */,
+				7DBC90932838994F00CD05B8 /* UIView+UINib.swift in Sources */,
 				7DBC908A28388B8700CD05B8 /* FormViewController.swift in Sources */,
 				7D4A8C38283886C200204D2F /* Resources.swift in Sources */,
 				7DBC908C28388BAC00CD05B8 /* main.swift in Sources */,
+				7DBC909828389C1D00CD05B8 /* FormTextView.swift in Sources */,
 				7D4A8C422838877400204D2F /* Images.swift in Sources */,
 				7DBC909028388F5900CD05B8 /* GradientView.swift in Sources */,
 				7D4A8C01283885D300204D2F /* AppDelegate.swift in Sources */,
+				7DBC909D2838ABCD00CD05B8 /* GenderSwitchView.swift in Sources */,
 				7D4A8C03283885D300204D2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
