@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7D4A8C01283885D300204D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A8C00283885D300204D2F /* AppDelegate.swift */; };
 		7D4A8C03283885D300204D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A8C02283885D300204D2F /* SceneDelegate.swift */; };
-		7D4A8C05283885D300204D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A8C04283885D300204D2F /* ViewController.swift */; };
-		7D4A8C08283885D300204D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4A8C06283885D300204D2F /* Main.storyboard */; };
 		7D4A8C0A283885D700204D2F /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4A8C09283885D700204D2F /* AppIcon.xcassets */; };
 		7D4A8C0D283885D700204D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4A8C0B283885D700204D2F /* LaunchScreen.storyboard */; };
 		7D4A8C18283885D700204D2F /* CDGO_IntProj_00Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A8C17283885D700204D2F /* CDGO_IntProj_00Tests.swift */; };
@@ -29,6 +27,11 @@
 		7DBC908028388B1E00CD05B8 /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907728388B1E00CD05B8 /* Chivo-Regular.ttf */; };
 		7DBC908128388B1E00CD05B8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907828388B1E00CD05B8 /* OFL.txt */; };
 		7DBC908228388B1E00CD05B8 /* Chivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */; };
+		7DBC908628388B7100CD05B8 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC908528388B7100CD05B8 /* Welcome.storyboard */; };
+		7DBC908828388B7A00CD05B8 /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC908728388B7A00CD05B8 /* Form.storyboard */; };
+		7DBC908A28388B8700CD05B8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908928388B8700CD05B8 /* FormViewController.swift */; };
+		7DBC908C28388BAC00CD05B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908B28388BAC00CD05B8 /* main.swift */; };
+		7DBC909028388F5900CD05B8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC908F28388F5900CD05B8 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +55,6 @@
 		7D4A8BFD283885D300204D2F /* CDGO-IntProj-00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDGO-IntProj-00.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4A8C00283885D300204D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D4A8C02283885D300204D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D4A8C04283885D300204D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D4A8C07283885D300204D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D4A8C09283885D700204D2F /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		7D4A8C0C283885D700204D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D4A8C0E283885D700204D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +78,11 @@
 		7DBC907728388B1E00CD05B8 /* Chivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Regular.ttf"; sourceTree = "<group>"; };
 		7DBC907828388B1E00CD05B8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.ttf"; sourceTree = "<group>"; };
+		7DBC908528388B7100CD05B8 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		7DBC908728388B7A00CD05B8 /* Form.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
+		7DBC908928388B8700CD05B8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		7DBC908B28388BAC00CD05B8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7DBC908F28388F5900CD05B8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		7D4A8BFF283885D300204D2F /* CDGO-IntProj-00 */ = {
 			isa = PBXGroup;
 			children = (
+				7DBC908B28388BAC00CD05B8 /* main.swift */,
 				7D4A8C332838869E00204D2F /* Support */,
 				7D4A8C312838869500204D2F /* Core */,
 				7D4A8C302838869100204D2F /* Resources */,
@@ -169,6 +176,7 @@
 		7D4A8C312838869500204D2F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7DBC908D28388F3F00CD05B8 /* Views */,
 				7D4A8C322838869900204D2F /* Scenes */,
 			);
 			path = Core;
@@ -177,8 +185,8 @@
 		7D4A8C322838869900204D2F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7D4A8C04283885D300204D2F /* ViewController.swift */,
-				7D4A8C06283885D300204D2F /* Main.storyboard */,
+				7DBC908328388B5B00CD05B8 /* Welcome */,
+				7DBC908428388B6200CD05B8 /* Form */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -256,6 +264,39 @@
 				7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */,
 			);
 			path = Chivo;
+			sourceTree = "<group>";
+		};
+		7DBC908328388B5B00CD05B8 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC908528388B7100CD05B8 /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		7DBC908428388B6200CD05B8 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC908728388B7A00CD05B8 /* Form.storyboard */,
+				7DBC908928388B8700CD05B8 /* FormViewController.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		7DBC908D28388F3F00CD05B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC908E28388F4300CD05B8 /* GradientView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DBC908E28388F4300CD05B8 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC908F28388F5900CD05B8 /* GradientView.swift */,
+			);
+			path = GradientView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +407,9 @@
 				7DBC907A28388B1E00CD05B8 /* Chivo-LightItalic.ttf in Resources */,
 				7DBC907D28388B1E00CD05B8 /* Chivo-BoldItalic.ttf in Resources */,
 				7DBC907F28388B1E00CD05B8 /* Chivo-BlackItalic.ttf in Resources */,
+				7DBC908628388B7100CD05B8 /* Welcome.storyboard in Resources */,
 				7DBC907B28388B1E00CD05B8 /* Chivo-Bold.ttf in Resources */,
+				7DBC908828388B7A00CD05B8 /* Form.storyboard in Resources */,
 				7DBC907C28388B1E00CD05B8 /* Chivo-Italic.ttf in Resources */,
 				7D4A8C0D283885D700204D2F /* LaunchScreen.storyboard in Resources */,
 				7D4A8C3D283886FF00204D2F /* Images.xcassets in Resources */,
@@ -375,7 +418,6 @@
 				7D4A8C3B283886F800204D2F /* Colors.xcassets in Resources */,
 				7D4A8C0A283885D700204D2F /* AppIcon.xcassets in Resources */,
 				7D4A8C3F2838870600204D2F /* Icons.xcassets in Resources */,
-				7D4A8C08283885D300204D2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,9 +442,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4A8C05283885D300204D2F /* ViewController.swift in Sources */,
+				7DBC908A28388B8700CD05B8 /* FormViewController.swift in Sources */,
 				7D4A8C38283886C200204D2F /* Resources.swift in Sources */,
+				7DBC908C28388BAC00CD05B8 /* main.swift in Sources */,
 				7D4A8C422838877400204D2F /* Images.swift in Sources */,
+				7DBC909028388F5900CD05B8 /* GradientView.swift in Sources */,
 				7D4A8C01283885D300204D2F /* AppDelegate.swift in Sources */,
 				7D4A8C03283885D300204D2F /* SceneDelegate.swift in Sources */,
 			);
@@ -440,14 +484,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D4A8C06283885D300204D2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D4A8C07283885D300204D2F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D4A8C0B283885D700204D2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
