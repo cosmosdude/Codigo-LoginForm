@@ -19,14 +19,19 @@ class FormViewController_IBOutlets: NSObject {
     @IBOutlet private(set) var scrollView: UIScrollView!
     @IBOutlet private(set) var inputFields: [FormTextView]! = []
     
+    @IBOutlet private(set) var firstnameField: FormTextView!
+    @IBOutlet private(set) var lastnameField: FormTextView!
+    @IBOutlet private(set) var emailField: FormTextView!
+    @IBOutlet private(set) var nationalityField: FormTextView!
+    @IBOutlet private(set) var countryField: FormTextView!
+    
     @IBOutlet private(set) var dobButton: UIButton!
     @IBOutlet private(set) var dobSeparator: UIView!
     @IBOutlet private(set) var dobSelectorContainer: UIView!
     @IBOutlet private(set) var dobSelector: UIDatePicker!
     @IBOutlet private(set) var dobSelectorHeight: NSLayoutConstraint!
     
-    @IBOutlet private(set) var genderSwitch: UIView!
-    
     @IBOutlet private(set) var countryCodeField: UITextField!
     @IBOutlet private(set) var phoneNumberField: UITextField!
+    @IBOutlet private(set) var phoneSeparator: UIView!
 }

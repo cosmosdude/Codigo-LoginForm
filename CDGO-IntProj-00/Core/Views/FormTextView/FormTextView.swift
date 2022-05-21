@@ -23,6 +23,12 @@ class FormTextView: NibView {
     }
     
     @IBInspectable
+    var text: String {
+        set { textField.text = newValue }
+        get { textField.text ?? "" }
+    }
+    
+    @IBInspectable
     var separatorColor: UIColor {
         set { separator.backgroundColor = newValue }
         get { separator.backgroundColor ?? .clear }

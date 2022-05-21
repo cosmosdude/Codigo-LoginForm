@@ -58,22 +58,116 @@ extension FormViewController {
     @IBAction
     private func actionForCreateNewAccount(button: UIButton!) {
         // validate
+        validate()
+    }
+    
+    private func validate() {
+        validateFirstName()
+        validateLastName()
+        validateEmail()
+        validateDob()
+        validateNationality()
+        validateCountryOfResidence()
+        validatePhoneNumber()
+    }
+    
+    private func validateFirstName() {
+        let field = outlets.firstnameField
+        let text = field?.text ?? ""
+        field?.separatorColor = text.isEmpty ? R.Colors.error : R.Colors.separator
+    }
+    private func validateLastName() {
+        let field = outlets.lastnameField
+        let text = field?.text ?? ""
+        field?.separatorColor = text.isEmpty ? R.Colors.error : R.Colors.separator
+    }
+    private func validateEmail() {
+        let field = outlets.emailField
+        let text = field?.text ?? ""
+        field?.separatorColor = isEmail(text) ? R.Colors.separator : R.Colors.error
+    }
+    
+    private func isEmail(_ text: String) -> Bool {
+        let basic = "([a-zA-Z][a-zA-Z0-9]*){1}([.][a-zA-Z\\d][a-zA-Z\\d_]*)*"
+        let pattern =
+        """
+        ^\(basic)[@]\(basic)$
+        """
+        
+        guard let regex = try? NSRegularExpression(
+                pattern: pattern,
+                options: .caseInsensitive
+        ) else {
+            print("Regex is failing")
+            return false
+        }
+        
+        return regex.firstMatch(
+            in: text, options: [],
+            range: NSMakeRange(0, (text as NSString).length)
+        ) != nil
+    }
+    
+    private func validateNationality() {
+        let color = outlets.nationalityField.text.isEmpty
+            ? R.Colors.error : R.Colors.separator
+        outlets.nationalityField.separatorColor = color
+    }
+    
+    private func validateCountryOfResidence() {
+        let color = outlets.countryField.text.isEmpty
+            ? R.Colors.error : R.Colors.separator
+        outlets.countryField.separatorColor = color
+    }
+    
+    private func validatePhoneNumber() {
+        let regionCode = outlets.countryCodeField.text ?? ""
+        let phone = outlets.phoneNumberField.text ?? ""
+        
+        var color = R.Colors.separator
+        
+        // if boths are empty, that's fine
+        // but if any of them are not empty, we need to validate
+        if !regionCode.isEmpty || !phone.isEmpty {
+            if !isValidRegionCode(regionCode) || !isValidPhoneNumber(phone) {
+                color = R.Colors.error
+            }
+        }
+        
+        outlets.phoneSeparator.backgroundColor = color
+    }
+    
+    private func isValidRegionCode(_ code: String) -> Bool {
+        guard let regex = try? NSRegularExpression(
+                pattern: "^[+][\\d]{1,3}$", options: []
+        ) else { print("Regex Failed") ; return  false }
+        
+        return regex.firstMatch(
+            in: code, options: [],
+            range: NSMakeRange(0, (code as NSString).length )
+        ) != nil
+    }
+    
+    private func isValidPhoneNumber(_ number: String) -> Bool {
+        guard let regex = try? NSRegularExpression(
+                pattern: "^[\\d]+$", options: []
+        ) else { print("Regex Failed") ; return  false }
+        
+        return regex.firstMatch(
+            in: number, options: [],
+            range: NSMakeRange(0, (number as NSString).length )
+        ) != nil
+    }
+    
+    private func validateDob() {
+        // hint error if date is not selected
+        outlets.dobSeparator.backgroundColor = (date == nil) ? R.Colors.error : R.Colors.separator
     }
     
     @IBAction
     private func actionForDobDropDown(button: UIButton!) {
         toggleDobSelector()
         self.outlets.dobSelectorContainer.layoutIfNeeded()
-    }
-    
-    @IBAction
-    private func actionWhenValueChanged(in datePicker: UIDatePicker) {
-        date = datePicker.date
-        
-        outlets.dobButton.setTitle(
-            formatter.string(from: date),
-            for: .normal
-        )
     }
     
     private func toggleDobSelector() {
@@ -83,42 +177,55 @@ extension FormViewController {
         outlets.dobSelectorHeight.constant = height == minheight ? maxHeight : minheight
     }
     
+    @IBAction
+    private func actionWhenValueChanged(in datePicker: UIDatePicker) {
+        date = datePicker.date
+        outlets.dobButton.setTitle(
+            formatter.string(from: date),
+            for: .normal
+        )
+    }
+    
+    
+    
 }
 
 extension FormViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        let inputField = outlets.inputFields
-            .filter { $0.textField === textField }
-            .first
-        
-        switch inputField?.identifier ?? "" {
-            case "firstname": focusInput(identifier: "lastname")
-            case "lastname": focusInput(identifier: "email")
-            case "email": focusInput(identifier: "nationality")
-            case "nationality": focusInput(identifier: "country")
-            case "country": _ = outlets.countryCodeField.becomeFirstResponder()
-            default:
-                if textField === outlets.countryCodeField {
-                    outlets.phoneNumberField.becomeFirstResponder()
-                } else {
-                    textField.resignFirstResponder()
-                }
-        }
-        
+        focusNextOrResign(with: textField)
         return false
     }
     
-    func focusInput(identifier: String) {
-        outlets.inputFields.forEach {
-            if $0.identifier == identifier {
-                $0.becomeFirstResponder()
-            }
+    private func focusNextOrResign(with textField: UITextField) {
+        if textField === outlets.firstnameField.textField {
+            outlets.lastnameField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.lastnameField.textField {
+            outlets.emailField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.emailField.textField {
+            outlets.nationalityField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.nationalityField.textField {
+            outlets.countryField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.countryField.textField {
+            outlets.countryCodeField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.countryCodeField {
+            outlets.phoneNumberField.becomeFirstResponder()
+        }
+        
+        if textField === outlets.phoneNumberField {
+            textField.resignFirstResponder()
         }
     }
-    
-    
     
 }
 
