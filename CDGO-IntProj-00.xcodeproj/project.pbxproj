@@ -20,6 +20,15 @@
 		7D4A8C3D283886FF00204D2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4A8C3C283886FF00204D2F /* Images.xcassets */; };
 		7D4A8C3F2838870600204D2F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4A8C3E2838870600204D2F /* Icons.xcassets */; };
 		7D4A8C422838877400204D2F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A8C412838877400204D2F /* Images.swift */; };
+		7DBC907A28388B1E00CD05B8 /* Chivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907128388B1E00CD05B8 /* Chivo-LightItalic.ttf */; };
+		7DBC907B28388B1E00CD05B8 /* Chivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907228388B1E00CD05B8 /* Chivo-Bold.ttf */; };
+		7DBC907C28388B1E00CD05B8 /* Chivo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907328388B1E00CD05B8 /* Chivo-Italic.ttf */; };
+		7DBC907D28388B1E00CD05B8 /* Chivo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907428388B1E00CD05B8 /* Chivo-BoldItalic.ttf */; };
+		7DBC907E28388B1E00CD05B8 /* Chivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907528388B1E00CD05B8 /* Chivo-Light.ttf */; };
+		7DBC907F28388B1E00CD05B8 /* Chivo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907628388B1E00CD05B8 /* Chivo-BlackItalic.ttf */; };
+		7DBC908028388B1E00CD05B8 /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907728388B1E00CD05B8 /* Chivo-Regular.ttf */; };
+		7DBC908128388B1E00CD05B8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907828388B1E00CD05B8 /* OFL.txt */; };
+		7DBC908228388B1E00CD05B8 /* Chivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,15 @@
 		7D4A8C3C283886FF00204D2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D4A8C3E2838870600204D2F /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		7D4A8C412838877400204D2F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7DBC907128388B1E00CD05B8 /* Chivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-LightItalic.ttf"; sourceTree = "<group>"; };
+		7DBC907228388B1E00CD05B8 /* Chivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Bold.ttf"; sourceTree = "<group>"; };
+		7DBC907328388B1E00CD05B8 /* Chivo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Italic.ttf"; sourceTree = "<group>"; };
+		7DBC907428388B1E00CD05B8 /* Chivo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7DBC907528388B1E00CD05B8 /* Chivo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Light.ttf"; sourceTree = "<group>"; };
+		7DBC907628388B1E00CD05B8 /* Chivo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7DBC907728388B1E00CD05B8 /* Chivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Regular.ttf"; sourceTree = "<group>"; };
+		7DBC907828388B1E00CD05B8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +155,7 @@
 		7D4A8C302838869100204D2F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D4A8C43283888BA00204D2F /* fonts */,
 				7D4A8C37283886C200204D2F /* Resources.swift */,
 				7D4A8C402838872900204D2F /* launchscreens */,
 				7D4A8C39283886E200204D2F /* appicon */,
@@ -213,6 +232,30 @@
 				7D4A8C0B283885D700204D2F /* LaunchScreen.storyboard */,
 			);
 			path = launchscreens;
+			sourceTree = "<group>";
+		};
+		7D4A8C43283888BA00204D2F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC907028388B1E00CD05B8 /* Chivo */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		7DBC907028388B1E00CD05B8 /* Chivo */ = {
+			isa = PBXGroup;
+			children = (
+				7DBC907128388B1E00CD05B8 /* Chivo-LightItalic.ttf */,
+				7DBC907228388B1E00CD05B8 /* Chivo-Bold.ttf */,
+				7DBC907328388B1E00CD05B8 /* Chivo-Italic.ttf */,
+				7DBC907428388B1E00CD05B8 /* Chivo-BoldItalic.ttf */,
+				7DBC907528388B1E00CD05B8 /* Chivo-Light.ttf */,
+				7DBC907628388B1E00CD05B8 /* Chivo-BlackItalic.ttf */,
+				7DBC907728388B1E00CD05B8 /* Chivo-Regular.ttf */,
+				7DBC907828388B1E00CD05B8 /* OFL.txt */,
+				7DBC907928388B1E00CD05B8 /* Chivo-Black.ttf */,
+			);
+			path = Chivo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,8 +361,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBC908128388B1E00CD05B8 /* OFL.txt in Resources */,
+				7DBC908228388B1E00CD05B8 /* Chivo-Black.ttf in Resources */,
+				7DBC907A28388B1E00CD05B8 /* Chivo-LightItalic.ttf in Resources */,
+				7DBC907D28388B1E00CD05B8 /* Chivo-BoldItalic.ttf in Resources */,
+				7DBC907F28388B1E00CD05B8 /* Chivo-BlackItalic.ttf in Resources */,
+				7DBC907B28388B1E00CD05B8 /* Chivo-Bold.ttf in Resources */,
+				7DBC907C28388B1E00CD05B8 /* Chivo-Italic.ttf in Resources */,
 				7D4A8C0D283885D700204D2F /* LaunchScreen.storyboard in Resources */,
 				7D4A8C3D283886FF00204D2F /* Images.xcassets in Resources */,
+				7DBC907E28388B1E00CD05B8 /* Chivo-Light.ttf in Resources */,
+				7DBC908028388B1E00CD05B8 /* Chivo-Regular.ttf in Resources */,
 				7D4A8C3B283886F800204D2F /* Colors.xcassets in Resources */,
 				7D4A8C0A283885D700204D2F /* AppIcon.xcassets in Resources */,
 				7D4A8C3F2838870600204D2F /* Icons.xcassets in Resources */,
